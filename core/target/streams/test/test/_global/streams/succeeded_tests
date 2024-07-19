@@ -1,6 +1,6 @@
 #Successful Tests
-#Fri Jul 19 14:07:31 CEST 2024
-WeightedGraphSpec=1721390851360
-graph.GraphOperationsSpec=1721390851403
-graph.UndirectedGraphSpec=1721390851360
-DirectedGraphSpec=1721390851360
+#Fri Jul 19 19:43:58 CEST 2024
+WeightedGraphSpec=1721411038444
+graph.GraphOperationsSpec=1721411038481
+graph.UndirectedGraphSpec=1721411038445
+DirectedGraphSpec=1721411038444

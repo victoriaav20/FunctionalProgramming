@@ -1,1 +1,1 @@
-["graph.GraphOperationsSpec","WeightedGraphSpec","DirectedGraphSpec","graph.UndirectedGraphSpec"]
+["graph.GraphOperationsSpec","graph.UndirectedGraphSpec","WeightedGraphSpec","DirectedGraphSpec"]

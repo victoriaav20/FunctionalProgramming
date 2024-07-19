@@ -1,12 +1,7 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(graph.UndirectedGraphSpec, org.scalatest.tools.Framework$$anon$1@5a4454ba, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(graph.GraphOperationsSpec, org.scalatest.tools.Framework$$anon$1@5a4454ba, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(DirectedGraphSpec, org.scalatest.tools.Framework$$anon$1@5a4454ba, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(WeightedGraphSpec, org.scalatest.tools.Framework$$anon$1@5a4454ba, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mDirectedGraphSpec:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mA DirectedGraph[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly add edges[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly remove edges[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return neighbors of a vertex[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(graph.GraphOperationsSpec, org.scalatest.tools.Framework$$anon$1@7f67d30e, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(graph.UndirectedGraphSpec, org.scalatest.tools.Framework$$anon$1@7f67d30e, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(DirectedGraphSpec, org.scalatest.tools.Framework$$anon$1@7f67d30e, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(WeightedGraphSpec, org.scalatest.tools.Framework$$anon$1@7f67d30e, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mUndirectedGraphSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAn UndirectedGraph[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should correctly add edges[0m[0m
@@ -16,6 +11,11 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mA WeightedGraph[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should correctly add edges with default weight[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should correctly add edges with custom weight[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly remove edges[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return neighbors of a vertex[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDirectedGraphSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA DirectedGraph[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly add edges[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should correctly remove edges[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return neighbors of a vertex[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mGraphOperationsSpec:[0m[0m
@@ -33,13 +33,13 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should compute shortest paths between all pairs[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mDijkstra's Algorithm[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should find the shortest path from a source[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 201 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 194 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 18[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 4, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 18, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	graph.GraphOperationsSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	graph.UndirectedGraphSpec[0m
 [0m[[0m[0mdebug[0m] [0m[0m	WeightedGraphSpec[0m
 [0m[[0m[0mdebug[0m] [0m[0m	DirectedGraphSpec[0m
-[0m[[0m[0mdebug[0m] [0m[0m	graph.UndirectedGraphSpec[0m

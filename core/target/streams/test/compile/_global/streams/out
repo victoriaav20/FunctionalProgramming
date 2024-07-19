@@ -1,6 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/victoria/Documents/M1/functionnal-programming/functional-graphs/core/src/test/scala/UndirectedGraphSpec.scala:9:48: polymorphic expression cannot be instantiated to expected type;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : [A]scala.collection.immutable.Set[A][0m
-[0m[[0m[31merror[0m] [0m[0m required: Set[(?, ?)][0m
-[0m[[0m[31merror[0m] [0m[0m    val graph = UndirectedGraph(Set.empty, Set.empty) // Initialize with empty vertices[0m
-[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

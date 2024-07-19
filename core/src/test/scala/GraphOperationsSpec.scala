@@ -5,7 +5,7 @@ import org.scalatest.matchers.should.Matchers
 
 class GraphOperationsSpec extends AnyFlatSpec with Matchers {
 
-  // Sample graphs for testing
+
   val directedGraph = DirectedGraph(Set(1, 2, 3), Set((1, 2), (2, 3)))
   val weightedGraph = WeightedGraph(Set(1, 2, 3), Map((1, 2) -> 1.0, (2, 3) -> 2.0))
 
@@ -21,7 +21,7 @@ class GraphOperationsSpec extends AnyFlatSpec with Matchers {
 
   "Topological Sort" should "return a valid ordering of nodes" in {
     val result = GraphOperations.topologicalSort(directedGraph)
-    result.get should contain theSameElementsAs List(1, 2, 3) // Use .get because we expect Some(List)
+    result.get should contain theSameElementsAs List(1, 2, 3) 
   }
 
   it should "return None for a cyclic graph" in {

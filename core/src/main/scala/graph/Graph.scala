@@ -20,7 +20,7 @@ case class WeightedGraph[A](vertices: Set[A], edgeWeights: Map[(A, A), Double]) 
     case ((v2, `vertex`), _) => v2
   }.toSet
   
-  def addEdge(from: A, to: A): WeightedGraph[A] = addEdge(from, to, 1.0) // Default weight of 1.0
+  def addEdge(from: A, to: A): WeightedGraph[A] = addEdge(from, to, 1.0) 
   
   def addEdge(from: A, to: A, weight: Double): WeightedGraph[A] =
     copy(edgeWeights = edgeWeights + (((from, to) -> weight)))
@@ -38,9 +38,9 @@ case class UndirectedGraph[A](vertices: Set[A], edges: Set[(A, A)]) extends Grap
   }
   
   def addEdge(from: A, to: A): UndirectedGraph[A] =
-    copy(edges = edges + ((from, to)) + ((to, from))) // Add both directions
+    copy(edges = edges + ((from, to)) + ((to, from)))
   
   def removeEdge(from: A, to: A): UndirectedGraph[A] =
-    copy(edges = edges - ((from, to)) - ((to, from))) // Remove both directions
+    copy(edges = edges - ((from, to)) - ((to, from)))
 }
 

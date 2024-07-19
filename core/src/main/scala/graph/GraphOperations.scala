@@ -5,7 +5,7 @@ import scala.collection.immutable.Queue
 
 object GraphOperations {
 
-  // Depth First Search (DFS)
+
   def dfs[A](graph: Graph[A], start: A): List[A] = {
     @tailrec
     def dfsRec(stack: List[A], visited: Set[A], result: List[A]): List[A] = {
@@ -24,7 +24,7 @@ object GraphOperations {
     dfsRec(List(start), Set.empty, Nil)
   }
 
-  // Breadth First Search (BFS)
+
   def bfs[A](graph: Graph[A], start: A): List[A] = {
     @tailrec
     def bfsRec(queue: Queue[A], visited: Set[A], result: List[A]): List[A] = {
@@ -41,7 +41,7 @@ object GraphOperations {
     bfsRec(Queue(start), Set.empty, Nil)
   }
 
-  // Topological Sort
+
   def topologicalSort[A](graph: DirectedGraph[A]): Option[List[A]] = {
     def visit(node: A, visited: Set[A], tempMarked: Set[A], order: List[A]): Option[(Set[A], List[A])] = {
       if (tempMarked.contains(node)) None // Cycle detected
@@ -61,7 +61,7 @@ object GraphOperations {
     }.map(_._2.reverse)
   }
 
-  // Cycle Detection
+
   def hasCycle[A](graph: DirectedGraph[A]): Boolean = {
     def visit(node: A, visited: Set[A], tempMarked: Set[A]): Boolean = {
       if (tempMarked.contains(node)) true // Cycle detected
@@ -78,7 +78,7 @@ object GraphOperations {
     graph.vertices.exists(node => visit(node, Set.empty, Set.empty))
   }
 
-  // Floyd's Algorithm
+
   def floydWarshall[A](graph: WeightedGraph[A]): Map[A, Map[A, Double]] = {
     val vertices = graph.vertices.toList
     val dist = vertices.map { v =>
@@ -87,7 +87,7 @@ object GraphOperations {
       }.toMap
     }.toMap
 
-    // Implementing the Floyd-Warshall algorithm
+
     val updatedDist = vertices.foldLeft(dist) { (currentDist, k) =>
       vertices.foldLeft(currentDist) { (tempDist, i) =>
         vertices.foldLeft(tempDist) { (distMap, j) =>
@@ -104,7 +104,7 @@ object GraphOperations {
     updatedDist
   }
 
-  // Dijkstra's Algorithm
+
   def dijkstra[A](graph: WeightedGraph[A], start: A): Map[A, Double] = {
     import scala.collection.mutable
 

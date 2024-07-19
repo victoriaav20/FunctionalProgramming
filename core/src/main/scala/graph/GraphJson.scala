@@ -28,19 +28,19 @@ object GraphJson {
     }
   }
 
-  // Encoder and decoder for DirectedGraph
+
   implicit def directedGraphEncoder[A: JsonEncoder]: JsonEncoder[DirectedGraph[A]] =
     DeriveJsonEncoder.gen[DirectedGraph[A]]
   implicit def directedGraphDecoder[A: JsonDecoder]: JsonDecoder[DirectedGraph[A]] =
     DeriveJsonDecoder.gen[DirectedGraph[A]]
 
-  // Encoder and decoder for WeightedGraph
+
   implicit def weightedGraphEncoder[A: JsonEncoder]: JsonEncoder[WeightedGraph[A]] =
     DeriveJsonEncoder.gen[WeightedGraph[A]]
   implicit def weightedGraphDecoder[A: JsonDecoder]: JsonDecoder[WeightedGraph[A]] =
     DeriveJsonDecoder.gen[WeightedGraph[A]]
 
-  // Encoder and decoder for UndirectedGraph
+
   implicit def undirectedGraphEncoder[A: JsonEncoder]: JsonEncoder[UndirectedGraph[A]] =
     DeriveJsonEncoder.gen[UndirectedGraph[A]]
   implicit def undirectedGraphDecoder[A: JsonDecoder]: JsonDecoder[UndirectedGraph[A]] =
